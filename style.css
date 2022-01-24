@@ -1,0 +1,1435 @@
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Zen Kaku Gothic Antique';
+  font-weight: 500;
+  background-color: white;
+}
+
+.white {
+  color: white
+}
+
+.black {
+  color: black;
+}
+
+/* Header styles */
+header {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  display: flex;
+}
+
+#small-header {
+  background-color: black;
+}
+
+#small-top-content {
+  height: 85px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+#top-content {
+  height: 95px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.main-content-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 35%;
+  padding-bottom: 80px;
+}
+
+#middle-text {
+  margin-top: -35px;
+}
+
+#top-text {
+  margin-top: -35px;
+}
+
+#main-logo {
+  display: flex;
+  height: 42px;
+}
+
+/* Logo made by Tracey Nguyen */
+#secondary-logo {
+  display: flex;
+  height: 75%;
+  width: 55%;
+  background: url('images/secondary_logo.svg') no-repeat center;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 6px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 680px;
+  background-color: transparent;
+}
+
+.nav-menu {
+  background-color: transparent;
+}
+
+.nav-text:hover {
+  opacity: 0.6
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: black;
+  margin: 0;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.book-button {
+  display: flex;
+  border: 1px solid white;
+  height: 37px;
+  align-items: center;
+  padding: 0px 20px 3px 20px;}
+
+.book-button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.main-section-header {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 770px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image by David Clode from Unsplash https://unsplash.com/ */
+#home-hero-image {
+  background: url('images/home-image.jpg') no-repeat center;
+}
+
+/* Image by Wonderlane from Unsplash https://unsplash.com/ */
+#about-hero-image {
+  background: url('images/about-image.jpg') no-repeat center;
+}
+
+/* Image by Kamil Feczko from Unsplash https://unsplash.com/ */
+#rooms-hero-image {
+  background: url('images/rooms-image.jpg') no-repeat center;
+}
+
+#page-title {
+  margin-bottom: 100px;
+}
+
+/* Section styles */
+section {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-title {
+  display: flex;
+  padding-bottom: 22px;
+}
+
+/* Home page styles */
+#featured-rooms {
+  height: 600px;
+}
+
+#home-rooms-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 860px;
+  height: 460px;
+  flex-wrap: wrap;
+}
+
+/* Scroll animation code from: https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671 */
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 0.7s ease-in-out both;
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.home-room-content {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: inherit;
+  justify-content: space-between;
+}
+
+.home-room-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 5px;
+}
+
+.home-room-description {
+  padding-top: 5px;
+}
+
+.home-room-child {
+  display: flex;
+}
+
+.black-button {
+  display: flex;
+  border: 1px solid black;
+  background-color: black;
+  height: 37px;
+  align-items: center;
+  padding: 0px 20px 3px 20px;
+}
+
+.black-button:hover {
+  display: flex;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.black-button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 3px;
+}
+
+.active-button {
+  padding: 0;
+}
+
+#reviews {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  background-color: black;
+}
+
+#reviews-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 210px;
+}
+
+.review-card {
+  display: flex;
+  height: 65%;
+  width: 75%;
+  padding-top: 10px;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-name {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding-top: 20px;
+  font-size: 12pt;
+}
+
+.review-description {
+  width: 75%;
+  display: flex;
+  flex: 2;
+  align-items: center;
+  text-align: center;
+  font-size: 9pt;
+  padding-bottom: 35px;
+}
+
+/* Slideshow styles */
+.slide-button {
+  width: 40px;
+}
+
+.splide__arrow {
+  background-color: transparent !important;
+  opacity: 1 !important;
+}
+
+.splide {
+  width: 1000px !important;
+}
+
+.splide__track {
+  width: 80%;
+}
+
+.splide__list {
+  display: flex !important;
+  overflow: hidden !important;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.splide__slide.is-active {
+  transform: scale(1.3)
+}
+
+#subscribe {
+  height: 226px;
+}
+
+#subscribe-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#subscribe-input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#subscribe-input {
+  display: flex;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 0;
+  font-family: 'Zen Kaku Gothic Antique';
+  color: black;
+  font-weight: 400;
+  font-size: 14pt;
+  flex-grow: 1;
+  margin-right: 12px;
+  padding: 0px 5px 0px 5px;
+  justify-content: center;
+}
+
+#subscribe-button {
+  display: flex;
+  border: 1px solid black;
+  background-color: black;
+  height: 37px;
+  align-items: center;
+  padding: 0px 20px 3px 20px;
+}
+
+#subscribe-button:hover {
+  display: flex;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* About page styles */
+#about-information {
+  height: 650px;
+}
+
+#about-content-container {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Rooms page styles */
+#rooms-list {
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rooms-list-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 84%;
+}
+
+#drop-down-container {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* Icon made by Freepik https://www.freepik.com from https://www.flaticon.com/ */
+#difficulty, #capacity {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 30px;
+  background: url('images/down-arrow.png') no-repeat right;
+  background-size: 40px;
+}
+
+.filter-type-text {
+  color: black;
+  padding-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+	border: none;
+  text-align: center;
+  font-family: 'Zen Kaku Gothic Antique';
+  font-size: 12pt;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+.drop-down {
+  border: 1px solid black;
+  width: 150px;
+  height: 40px;
+  display: flex;
+}
+
+#rooms-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 60px;
+}
+
+.room-content {
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+#book-of-magic {
+  display: none;
+}
+
+#lockwood-manor {
+  display: none;
+}
+
+#underground {
+  display: none;
+}
+
+#midnight-express {
+  display: none;
+}
+
+#labyrinth {
+  display: none;
+}
+
+.room-image {
+  display: flex;
+  height: 220px;
+}
+
+.room-title {
+  margin-top: -10px;
+}
+
+/* Room 1 page styles */
+#room-1-info {
+  height: 1190px;
+  display: flex;
+}
+
+#room-1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90%;
+}
+
+#room-1-content {
+  display: flex;
+  width: 80%;
+}
+
+#room-1-book-button {
+  margin-top: 23px;
+}
+
+
+#room-1-left-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#room-1-image {
+  display: flex;
+  height: 400px;
+}
+
+#room-details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  column-gap: 20px;
+}
+
+#room-details > div {
+  flex: 1 1
+}
+
+.room-details-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.room-details-child-1 {
+  display: flex;
+  flex: 2
+}
+
+.room-details-child-2 {
+  display: flex;
+  flex: 3
+}
+
+#room-1-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.3;
+  padding-left: 30px;
+  height: 400px;
+}
+
+#room-1-title {
+  margin-top: -10px;
+  font-size: 28pt;
+}
+
+#room-1-title-2 {
+  display: none;
+}
+
+.room-description {
+  color: black;
+  font-size: 14pt;
+}
+
+#explore-more-rooms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#explore-more-rooms-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+/* Booking Room 1 page styles */
+#book-room-1 {
+  height: 650px;
+}
+
+#book-room-1-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90%;
+}
+
+#booking-title {
+  margin-top: -20px;
+  margin-bottom: -10px;
+}
+
+#booking-fill-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+#booking-fill {
+  display: flex;
+  width: 550px;
+  column-gap: 25px;
+}
+
+.field-label {
+  display: flex;
+  color: black;
+  font-size: 12pt;
+}
+
+.booking-field-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.date-time-picker {
+  display: flex;
+  height: 40px;
+}
+
+.date-time-picker:hover {
+  cursor: pointer;
+}
+
+td.active {
+  background: black !important;
+  border-radius: 0 !important;
+}
+
+.form-control {
+  display: flex;
+  height: inherit;
+  font-family: Zen Kaku Gothic Antique;
+  font-size: 12pt;
+  text-align: center;
+  border-radius: 0;
+  border: 1px solid black;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: stretch;
+  width: 100%;
+  background: white !important;
+}
+
+.input-group > .form-control {
+  position: relative; 
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0; 
+}
+
+.input-group > .form-control:focus {
+  z-index: 3;
+}
+
+table {
+  margin: 0 !important;
+  font-family: 'Zen Kaku Gothic Antique' !important;
+}
+
+#input-date {
+  caret-color: transparent;
+
+}
+
+#input-date::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+#input-date:hover {
+  cursor: pointer;
+}
+
+.datepicker-dropdown {
+  background-color: white !important;
+  border: 1px solid rgb(206, 206, 206) !important;
+  border-radius: 0 !important;
+  position: absolute !important;
+}
+
+.input-group-text {
+  border-radius: 0 !important;
+  border: 1px solid black !important;
+  background-color: black !important;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day:hover, .month:hover, .datepicker-switch:hover, .next:hover, .prev:hover {
+  border-radius: 0 !important;
+}
+
+.active {
+  background: black !important;
+  border-radius: 0 !important;
+}
+
+#drop-down-time {
+  width: 100%;
+  height: inherit;
+  border: 1px solid black;
+}
+
+/* Icon made by Freepik https://www.freepik.com from https://www.flaticon.com/ */
+#select-time {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 40px;
+  background: url('images/time-with-background.jpg') no-repeat right;
+  background-size: 40px;
+}
+
+.icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.icon-size {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-right: -3px;
+  margin-left: -3px;
+}
+
+#booking-fill-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 550px;
+}
+
+#booking-field-group-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#drop-down-quantity {
+  height: 40px;
+  border: 1px solid black;
+  width: 90px;
+  background-color: white;
+}
+
+/* Icon made by Freepik https://www.freepik.com from https://www.flaticon.com/ */
+#quantity {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 30px;
+  background: url('images/down-arrow.png') no-repeat right;
+  background-size: 40px;
+}
+
+#next-button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+#cost-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#total-cost {
+  padding-right: 10px;
+}
+
+#price {
+  font-size: 18pt;
+}
+
+/* Footer styles */
+footer {
+  width: 100% !important;
+  height: 330px;
+  background-color: black;
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}
+
+#footer-top {
+  display: flex;
+  width: 100%;
+  height: 220px;
+  max-width: 860px;
+  justify-content: space-between;
+}
+
+.footer-top-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  width: 28%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 5px;
+}
+
+.footer-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-heading {
+  font-size: 14pt;
+}
+
+.footer-body {
+  color: white;
+  font-size: 12pt;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.social-logo {
+  width: 28px;
+  padding-bottom: 10px;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.social-logo:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#copyright-text {
+  font-size: 9.5pt;
+  color: white;
+}
+
+/* Text styles */
+h1 {
+  font-family: 'Zen Kaku Gothic Antique';
+  color: white;
+  font-weight: 500;
+  font-size: 56pt;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Zen Kaku Gothic Antique';
+  color: white;
+  font-weight: 500;
+  font-size: 32pt;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Zen Kaku Gothic Antique';
+  color: black;
+  font-weight: 500;
+  font-size: 22pt;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+h4 {
+  font-family: 'Zen Kaku Gothic Antique';
+  color: black;
+  font-weight: 500;
+  font-size: 18pt;
+  margin: 0;
+}
+
+h5 {
+  font-family: 'Zen Kaku Gothic Antique';
+  color: white;
+  font-weight: 500;
+  font-size: 15pt;
+  padding-bottom: 3px;
+  margin: 0;
+}
+
+h6 {
+  font-family: 'Zen Kaku Gothic Antique';
+  color: black;
+  font-weight: 400;
+  font-size: 14pt;
+  margin: 0;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1218px) {
+  h1 {
+    font-size: 46pt;
+  }
+
+  h2 {
+    font-size: 26pt;
+  }
+
+  body {
+    overflow-y: auto;
+  }
+
+  body.active {
+    overflow-y: scroll;
+    position: fixed;
+    width: 100%;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    min-height: 70vh;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .main-section-header {
+    height: 600px;
+  }
+
+  #rooms-list {
+    height: 1300px;
+  }
+
+  #rooms-list-content {
+    height: 95%;
+  }
+
+  #rooms-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  #room-1-info {
+    height: 1680px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #room-1-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: -30px
+  }
+
+  #room-1-image {
+    width: 300px;
+    height: auto;
+  }
+
+  #room-details {
+    width: 310px;
+    flex-direction: column;
+  }
+
+  .room-description {
+    font-size: 14pt
+  }
+
+  #room-1-text {
+    padding-left: 0;
+    padding-top: 20px;
+    height: 250px;
+  }
+
+  #room-1-title {
+    display: none;
+  }
+
+  #room-1-title-2 {
+    display: flex;
+    padding-bottom: 10px;
+    font-size: 24pt;
+  }
+
+  #explore-more-rooms {
+    margin-top: 40px;
+  }
+
+  #explore-more-rooms-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+}
+
+@media only screen and (min-height: 500px) {
+  .nav-menu.active {
+    min-height: 500px;
+  }
+}
+
+@media only screen and (max-width: 1056px) {
+  #featured-rooms {
+    height: 540px;
+  }
+
+  .section-title {
+    padding-top: 0px;
+  }
+
+  #home-rooms-container {
+    width: 690px;
+    height: 410px;
+  }
+
+  .home-room-content {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: inherit;
+    justify-content: space-between;
+  }
+
+  #reviews {
+    height: 330px;
+  }
+
+  .splide {
+    width: 700px !important;
+  }
+  
+  #subscribe {
+    height: 190px;
+  }
+
+  #room-1-info {
+    height: 2000px;
+  }
+
+  #room-1-content {
+    margin-top: -40px
+  }
+
+  #room-1-text {
+    height: auto;
+  }
+
+  #explore-more-rooms-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .room-description {
+    font-size: 12pt;
+  }
+
+  #price {
+    font-size: 16pt;
+  }
+
+  footer {
+    height: 500px;
+  }
+
+  #footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+
+  #footer-logo {
+    height: 100px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  .footer-top-content {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 5px;
+  }
+
+  #secondary-logo {
+    width: 250px;
+    height: 100%;
+    background: url('images/main_logo.svg') no-repeat center;
+  }
+  
+  #footer-top-middle-content {
+    height: 120%;
+  }
+
+  .footer-text-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-heading {
+    font-size: 12pt;
+  }
+  
+  .footer-body {
+    font-size: 11.5pt;
+  }
+
+  #copyright-text {
+    font-size: 8.5pt;
+  }
+
+  h1 {
+    font-size: 40pt;
+  }
+
+  h2 {
+    font-size: 24pt;
+  }
+
+  h3 {
+    font-size: 20pt;
+  }
+
+  h4 {
+    font-size: 16pt;
+  }
+
+  h6 {
+    font-size: 12pt;
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  .main-section-header {
+    height: 500px;
+  }
+
+  #main-logo {
+    height: 35px;
+  }
+
+  #top-text, #middle-text {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  #featured-rooms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1020px;
+  }
+
+  #home-rooms-container {
+    flex-wrap: wrap;
+    width: 400px;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-room-content {
+    display: flex;
+    width: 340px;
+    height: 410px;
+    justify-content: space-between;
+  }
+
+  .splide {
+    width: 400px !important;
+  }
+
+  .splide__slide.is-active {
+    transform: scale(1)
+  }
+
+  #subscribe {
+    height: 280px;
+  }
+
+  #subscribe-container {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+  }
+
+  #subscribe-input-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #subscribe-input {
+    font-size: 12pt;
+    margin-right: 0px;
+  }
+
+  #subscribe-button {
+    margin-top: 20px;
+  }
+  
+  #about-information {
+    height: 800px;
+  }
+
+  #rooms-list {
+    height: 2000px;
+  }
+
+  #drop-down-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 180px;
+  }
+
+  .filter-type-text {
+    font-size: 14pt;
+  }
+
+  #rooms-list {
+    height: 2000px;
+  }
+
+  #rooms-list-content {
+    height: 96%;
+  }
+
+  #rooms-container {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+
+  #room-1-info {
+    height: 2100px;
+  }
+
+  #book-room-1 {
+    height: 620px;
+  }
+
+  #booking-fill-container {
+    margin-top: 20px;
+  }
+
+  #booking-fill {
+    flex-direction: column;
+    width: 250px;
+    row-gap: 20px;
+    justify-content: center;
+  }
+
+  #booking-fill-2 {
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 120px;
+  }
+
+  .booking-field-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #next-button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  h1 {
+    font-size: 36pt;
+  }
+
+  h2 {
+    font-size: 22pt;
+  }
+
+  h3 {
+    font-size: 18pt;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #main-logo {
+    height: 32px;
+  }
+
+  .splide {
+    width: 360px !important;
+  }
+
+  h1 {
+    font-size: 28pt;
+  }
+
+  h2 {
+    font-size: 22pt;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #main-logo {
+    height: 27px;
+  }
+
+  .splide {
+    width: 360px !important;
+  }
+
+  h1 {
+    font-size: 27pt;
+  }
+
+  h2 {
+    font-size: 19pt;
+  }
+
+  #home-rooms-container {
+    width: 90%;
+
+  }
+
+  #drop-down-container {
+    width: 300px;
+  }
+}

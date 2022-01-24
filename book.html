@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>The Great Escape Rooms</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header id="small-header">
+				<div id="small-top-content">
+					<!--Logo made by Tracey Nguyen-->
+					<a href="index.html"><img id="main-logo" src="images/main_logo.svg" alt="The Great Escape logo."/></a>
+					<nav class="nav-menu">
+						<a href="index.html" class="nav-link"><h5 class="nav-text">HOME</h5></a>
+						<a href="about.html" class="nav-link"><h5 class="nav-text">ABOUT</h5></a>
+						<a href="rooms.html" class="nav-link"><h5 class="nav-text">ROOMS</h5></a>
+						<a><h5 class="nav-text">FAQS</h5></a>
+						<a><h5 class="nav-text">CONTACT</h5></a>
+						<h5 class="book-button">BOOK NOW</h5>
+					</nav>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</div>
+			</header>
+			<section id="book-room-1">
+        <div id="book-room-1-content">
+          <h2 id="booking-title" class="black">BOOKING</h2>
+          <h3 class="black">Room: The Book of Magic</h3>
+          <div id="booking-fill-container">
+            <div id="booking-fill">
+              <div class="booking-field-group">
+                <h5 class="field-label">Date</h5>
+                <div class="date-time-picker" >
+									<form>
+										<div class="input-group date" id="datepicker">
+											<input type="text" id="input-date" placeholder="Select Date" class="form-control">
+											<span class="input-group-append">
+												<span class="input-group-text">
+													<img class="icon-size" src="images/calendar.png" alt="Calendar icon."/>
+												</span>
+											</span>
+										</div>
+								</form>
+								</div>
+              </div>
+              <div class="booking-field-group">
+                <h5 class="field-label">Time</h5>
+                <div class="date-time-picker">
+									<div id="drop-down-time">
+										<select id="select-time">
+											<option value="0">Select Time</option>
+											<option value="1">10:00am</option>
+											<option value="2">12:00pm</option>
+											<option value="4">2:00pm</option>
+											<option value="5">4:00pm</option>
+											<option value="6">6:00pm</option>
+											<option value="7">8:00pm</option>
+										</select>
+									</div>
+                </div>
+              </div>
+            </div>
+            <div id="booking-fill-2">
+              <div id="booking-field-group-2">
+                <h5 class="field-label">Quantity</h5>
+                <div id="drop-down-quantity">
+                  <select id="quantity">
+                    <option value="0">2</option>
+                    <option value="1">3</option>
+                    <option value="2">4</option>
+                    <option value="3">5</option>
+                    <option value="4">6</option>
+                  </select>
+                </div>
+              </div>
+              <div id="cost-container">
+                <h4 id="total-cost">Total Cost:</h4>
+                <h6 id="price">$</h6>
+              </div>
+            </div>
+            <div id="next-button-container"><h5 class="black-button">NEXT</h5></div>
+          </div>
+        </div>
+			</section>
+			<footer>
+				<div id="footer-top">
+					<div id="footer-logo" class="footer-top-content">
+						<div id="secondary-logo"></div>
+					</div>
+					<div id="footer-top-middle-content" class="footer-top-content">
+						<div class="footer-text-container">
+							<h5 class="footer-heading">Address</h5>
+							<h6 class="footer-body">
+								Suite 44, Hunter St, Broadway, 
+								NSW, 2581
+							</h6>
+						</div>
+						<div class="footer-text-container">
+							<h5 class="footer-heading">Opening Hours</h5>
+							<h6 class="footer-body">
+								Monday-Friday: 11am-5pm<br>
+								Saturday-Sunday: 10am-9pm
+							</h6>
+						</div>
+					</div>
+					<div class="footer-top-content">
+						<div class="footer-text-container">
+							<h5 class="footer-heading">Phone</h5>
+							<h6 class="footer-body footer-link">
+								(02) 5550 2044<br><br>
+							</h6>
+						</div>
+						<div class="footer-text-container">
+							<h5 class="footer-heading">Email</h5>
+							<h6 class="footer-body footer-link">
+								info@thegreatescaperooms.com<br><br>
+							</h6>
+						</div>
+					</div>
+				</div>
+				<div id="footer-bottom">
+					<!--Icons made by Freepik https://www.freepik.com from https://www.flaticon.com/-->
+					<div id="social-links">
+						<img class="social-logo" src="images/facebook-logo.png" alt="Facebook logo."/>
+						<img class="social-logo" src="images/instagram-logo.png" alt="Instagram logo."/>
+						<img class="social-logo" src="images/tripadvisor-logo.png" alt="Tripadvistor logo."/>
+					</div>
+					<h6 id="copyright-text">Made by Tracey Nguyen</h6>
+				</div>
+			</footer>
+		</div>
+		<script src="book.js"></script>
+		<script src="responsive_navigation.js"></script>
+	</body>
+</html>
