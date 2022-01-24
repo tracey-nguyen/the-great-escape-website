@@ -4,7 +4,7 @@ The Great Escape is an online booking website for an escape room. This website w
 
 
 ## Site Map
-<img width="800" alt="Site Map" src="https://user-images.githubusercontent.com/73512654/150724817-72739660-689a-4a93-8e85-2f56c6a448cd.png">
+<img width="750" alt="Site Map" src="https://user-images.githubusercontent.com/73512654/150724817-72739660-689a-4a93-8e85-2f56c6a448cd.png">
 
 
 ## Website Design and Content
@@ -17,7 +17,11 @@ The Great Escape is an online booking website for an escape room. This website w
 
 
 ## Wireframe and Mockup of the Home Page
+### Wireframe
+![home page-01](https://user-images.githubusercontent.com/73512654/150725940-d1ceef0f-59ec-49e0-8e8e-9f6c8c435fa4.png)
 
+### Mockup
+![home page mockup-01](https://user-images.githubusercontent.com/73512654/150725975-bea90bc6-c1f0-44d9-aa36-a5d7f75bd265.png)
 
 ## JavaScript and JQuery Implementation
 ### Scrolled Triggered Animations 
