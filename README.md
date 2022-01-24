@@ -4,7 +4,7 @@ The Great Escape is an online booking website for an escape room. This website w
 
 
 ## Site Map
-<img width="1250" alt="Site Map" src="https://user-images.githubusercontent.com/73512654/150724817-72739660-689a-4a93-8e85-2f56c6a448cd.png">
+<img width="800" alt="Site Map" src="https://user-images.githubusercontent.com/73512654/150724817-72739660-689a-4a93-8e85-2f56c6a448cd.png">
 
 
 ## Website Design and Content
