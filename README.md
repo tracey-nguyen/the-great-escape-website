@@ -23,7 +23,7 @@ The Great Escape is an online booking website for an escape room. This website w
 ### Mockup
 <img width="600" alt="Home page mockup" src="https://user-images.githubusercontent.com/73512654/150725975-bea90bc6-c1f0-44d9-aa36-a5d7f75bd265.png">
 
-## JavaScript and JQuery Implementation
+## JavaScript and jQuery Implementation
 ### Scrolled Triggered Animations 
 JavaScript is used to have scroll triggered animations on the room images and customer reviews when a user scrolls down on the home page. 
 
